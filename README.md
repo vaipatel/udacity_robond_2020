@@ -9,7 +9,7 @@
 
 ## ROS Notes
 
-Think of ROS as a framework for creating a Computation Graph (not the DNN kind) where [Nodes](http://wiki.ros.org/Nodes) can pass [Messages](http://wiki.ros.org/Messages) to each other and process them. One Node in a robot model might [publish odometry data](https://github.com/ros-simulation/gazebo_ros_pkgs/blob/5e5bf8469ddf907b5ffbe1534c0ceee10e562625/gazebo_plugins/src/gazebo_ros_planar_move.cpp#L238), another might [subscribe to odometry and other data and apply an extended kalman filter](https://github.com/udacity/robot_pose_ekf/blob/master/src/odom_estimation_node.cpp#L425-L426) for localization.
+Think of ROS as a framework for creating a Computation Graph (not the DNN kind) where [Nodes](http://wiki.ros.org/Nodes) can pass [Messages](http://wiki.ros.org/Messages) to each other and process them. One Node in a robot model might [publish odometry data](https://github.com/ros-simulation/gazebo_ros_pkgs/blob/5e5bf8469ddf907b5ffbe1534c0ceee10e562625/gazebo_plugins/src/gazebo_ros_planar_move.cpp#L305), another might [subscribe to odometry and other data and apply an extended kalman filter](https://github.com/udacity/robot_pose_ekf/blob/master/src/odom_estimation_node.cpp#L425-L426) for localization.
 
 ### Computation Graph Level
 
