@@ -24,9 +24,19 @@ At the Computation Graph level, ROS consists of
 * TODO: Bags
 
 ### File System Level
-At the Filesystem level, ROS is made of packages, which consist of 
-* a package.xml for meta-info like version, dependencies, etc.
-* executables for Nodes which can publish/subscribe to Topics to receive/send/process data in Messages
-* custom Message definition files
-* custom Service definition files
-* launch files
+The official way to develop a ROS project is via the [catkin build system](http://wiki.ros.org/catkin).
+
+At the Filesystem level, a catkin ROS project will consist of a [workspace](http://wiki.ros.org/catkin/workspaces) folder. This workspace layout is per the catkin convention and basically mimics an out-of-source CMake style build structure. 
+
+In particular, inside the `src` folder will be folders for one or more [packages](http://wiki.ros.org/catkin/Tutorials/CreatingPackage). Packages are collections of ROS comp graph items and other resources like models, `.launch` environments, etc. The official build system for building packages is the catkin build system. The workspace directory is referred to as the catkin workspace.
+
+A typical package, say identified by a folder `my-package`, may be laid out as follows.
+
+`my-package/`
+* `package.xml`: Mandatory. Needed for meta-info like version, dependencies, etc.
+* `CMakeLists.txt`: Mandatory (I think). Needed for finding dependencies, message/service definitions, other libraries etc. Like normal CMakeLists except tailored toward ROS development.
+* `src/*.cpp` or `src/*.py`: source code for Node executables which can publish/subscribe to Topics to receive/send/process data in Messages
+* `msg/*.msg`: custom Message definition files
+* `srv/*.srv`: custom Service definition files
+* `launch/*.launch`: launch files
+* `world/*.world`: world files
