@@ -24,6 +24,14 @@
 
         <!-- Params to get rid of transform timeout errors. -->
         <!-- <param name="transform_tolerance" value="0.5"/> -->
+
+        <!-- Other tuning params -->
+        <param name="update_min_a" value="0.3926"/>
+        <!-- <param name="update_min_d" value="0.1"/> -->
+        <!-- <param name="laser_z_hit" value="0.96"/> -->
+        <!-- <param name="laser_z_rand" value="0.04"/> -->
+        <!-- <param name="laser_min_range" value="1.0"/> -->
+        <!-- <param name="recovery_alpha_fast" value="0.1"/> -->
     </node>
 
     <!-- Move Base -->
