@@ -6,8 +6,8 @@ raytrace_range: 3.0 # 3.0
 transform_tolerance: 0.1 # 0.0
 
 robot_radius: 0.3 # 0.0
-inflation_radius: 1.5 # 0.0
-cost_scaling_factor: 10.0
+inflation_radius: 0.6 # 0.0, Vai: Double robot_radius
+cost_scaling_factor: 15.0 # Vai: fall off very rapid
 
 observation_sources: laser_scan_sensor
 
