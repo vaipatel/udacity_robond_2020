@@ -1,5 +1,12 @@
 # Submissions/Notes for Udacity RoboND 2020
 
+- [Gazebo Notes](#gazebo-notes)
+- [ROS Notes](#ros-notes)
+  - [Computation Graph Level](#computation-graph-level)
+    - [What the developer develops](#what-the-developer-develops)
+    - [What ROS provides](#what-ros-provides)
+  - [File System Level](#file-system-level)
+
 ## Gazebo Notes
 
 * Think of Gazebo as a version of Unity or Unreal. Think Entity-Components, basic model editing, yadda yadda.
